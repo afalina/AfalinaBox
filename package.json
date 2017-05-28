@@ -1,0 +1,16 @@
+{
+  "name": "AfalinaBox",
+  "productName": "AfalinaBox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "package-mac": "electron-packager . --electron-version 1.6.10 --overwrite --platfrom darwin --arch=x64 --app-bundle-id com.afalina.afalinabox --icon=icons/mac/afalinabox.icns --out build"
+  },
+  "author": "Mariia Broide",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^1.7.0",
+    "moment": "^2.18.1"
+  }
+}

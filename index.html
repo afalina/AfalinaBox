@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex-item-left">
+        <div class="dolphin"></div>
+        <h1>Afalina Box</h1>
+        <h2>Easy sync for your server apps</h2>
+        <div class="heart-divider">❧</div>
+        <div class="description">
+            AfalinaBox позволяет автоматически загружать файлы с вашего домашнего компьютера на любой другой. Вам всего лишь необходимо ввести адрес папки на вашем компьютере, из которой вы хотите синхронизировать файлы, адрес папки на удаленном компьютере, адрес удаленного компьютера и имя пользователя, под которым нужно подключиться. Все ваши данные надежно защищены!
+        </div>
+    </div>
+
+
+    <div class="flex-item">
+        <div>
+            Local Directory<br>
+            <input name="localDir">
+            <br>
+            Remote Directory<br>
+            <input name="remoteDir">
+            <br>
+            Remote Host<br>
+            <input name="remoteHost">
+            <br>
+            Remote User<br>
+            <input name="remoteUser">
+            <br>
+            <a class="sync" id="sync">Sync</a>
+            <a class="stopSync" id="stopSync">Stop syncing</a>
+            <a class="retry" id="retry">&#x21bb; Retry</a>
+        </div>
+
+        <div class="status">
+            <div class="lastSync" id="lastSync"></div>
+            <div class="loader" id="loader">
+                <div id="cssload-loader">
+                    <div class="cssload-dot"></div>
+                    <div class="cssload-dot"></div>
+                    <div class="cssload-dot"></div>
+                    <div class="cssload-dot"></div>
+                    <div class="cssload-dot"></div>
+                    <div class="cssload-dot"></div>
+                    <div class="cssload-dot"></div>
+                    <div class="cssload-dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="syncing.js"></script>
+</body>
+</html>
